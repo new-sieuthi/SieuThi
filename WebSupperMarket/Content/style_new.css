@@ -1481,25 +1481,47 @@ pre {
     padding-right: 8px
 }
 
-@media (max-width:1024px)
-{
+@media (max-width:1023px) {
     .mega-menu-carousel {
         margin-right: 18px;
     }
 
-    .txtbanner h5{
+    .txtbanner h5 {
         height: auto !important;
         width: auto !important;
     }
 
-    .txtbanner h5 a{
-        position:inherit !important;
-        line-height :20px;
+        .txtbanner h5 a {
+            position: inherit !important;
+            line-height: 20px;
+        }
+
+        .txtbanner h5 img {
+            height: 50px;
+            width: 50px;
+        }
+
+    .mainbox h5 {
+        margin-left: 0 !important;
     }
 
-    .txtbanner h5 img{
-        height:auto;
-        width:auto;
+        .mainbox h5 span {
+            font-size: 13px !important;
+        }
+
+        .mainbox h5 i {
+            font-size: 13px !important;
+        }
+
+    /*.menu__cat {
+        width: 16.66666667%;
+    }*/
+}
+
+@media(max-width:860px){
+    .txtbanner h5 img {
+        height: auto;
+        width: auto;
     }
 }
 
@@ -32909,15 +32931,15 @@ body.ios-11.modal-open #cboxWrapper {
         padding: 0 15px
     }
 
-.menu__cat {
-    background-color: hsla(0,0%,100%,.9);
-    position: absolute;
-    z-index: 50;
-    height: 512px;
-    width: 230px;
-    top: 0;
-    box-shadow: -2px 0 5px 0 hsla(0,0%,79%,.5)
-}
+    .menu__cat {
+        background-color: hsla(0,0%,100%,.9);
+        position: absolute;
+        z-index: 50;
+        height: 512px;
+        width: 16.66666667%;
+        top: 0;
+        box-shadow: -2px 0 5px 0 hsla(0,0%,79%,.5)
+    }
 
 .menu__cat-wrap {
     position: relative
@@ -32930,11 +32952,11 @@ body.ios-11.modal-open #cboxWrapper {
     position: absolute
 }
 
-.menu__cat-list--parent {
-    left: 0;
-    top: 0;
-    width: 217px;
-}
+    .menu__cat-list--parent {
+        left: 0;
+        top: 0;
+        /*width: 16.66666667%;*/
+    }
 
 .menu__cat-list--child {
     display: none;
@@ -33077,7 +33099,7 @@ body.ios-11.modal-open #cboxWrapper {
     border-top: 1px solid rgba(0,0,0,.05);
     height: 35px;
     color: #000;
-    font-size: 14px;
+    font-size: 11px!important;
     font-weight: 400
 }
 
@@ -53932,7 +53954,7 @@ a:link.ui-button, a:visited.ui-button {
             margin-top: 5px
         }
 
-@media (max-width:1024px) {
+@media (max-width:1023px) {
     .notification {
         padding-left: 20px;
         padding-right: 20px
