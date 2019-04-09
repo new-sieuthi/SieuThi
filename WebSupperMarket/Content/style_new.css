@@ -1356,6 +1356,8 @@ dd {
     .dl-horizontal dd {
         margin-left: 180px
     }
+
+    
 }
 
 abbr[data-original-title], abbr[title] {
@@ -1479,6 +1481,27 @@ pre {
     padding-right: 8px
 }
 
+@media (max-width:1024px)
+{
+    .mega-menu-carousel {
+        margin-right: 18px;
+    }
+
+    .txtbanner h5{
+        height: auto !important;
+        width: auto !important;
+    }
+
+    .txtbanner h5 a{
+        position:inherit !important;
+    }
+
+    .txtbanner h5 img{
+        height:auto;
+        width:auto;
+    }
+}
+
 @media (min-width:640px) {
     .container {
         width: 100%
@@ -1489,6 +1512,8 @@ pre {
     .container {
         width: 1024px
     }
+
+    
 }
 
 @media (min-width:1240px) {
@@ -32907,7 +32932,7 @@ body.ios-11.modal-open #cboxWrapper {
 .menu__cat-list--parent {
     left: 0;
     top: 0;
-    width: 196px
+    width: 217px;
 }
 
 .menu__cat-list--child {
@@ -33073,7 +33098,8 @@ body.ios-11.modal-open #cboxWrapper {
 .feature__sec-container {
     height: 512px;
     position: relative;
-    padding: 0 8px
+    padding: 0 8px;
+    width:100%;
 }
 
 @media (max-width:1023px) {
@@ -42344,7 +42370,7 @@ body.page-checkout-login, body.page-multiStepCheckoutSummaryPage {
 
 .shortcut__list__container .shortcut__item .shortcut__content {
     text-align: center;
-    height: 100%;
+    /*height: 100%;*/
     padding: 12px 6px
 }
 
@@ -71132,9 +71158,9 @@ header .navigation--middle .nav__left .site-search .input-group {
 .mainbox {
     display: block;
     width: 100%;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     /*margin: auto;*/
-    height: 36px;
+    height: auto;
     position: relative;
 }
 
@@ -71190,10 +71216,10 @@ header .navigation--middle .nav__left .site-search .input-group {
     }
 
 .txtbanner {
-    display: inline-block;
-    width: 80%;
+    /*display: inline-block;*/
+    /*width: 80%;*/
     line-height: 52px;
-    height: 52px;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
@@ -71220,7 +71246,8 @@ header .navigation--middle .nav__left .site-search .input-group {
         margin-left: 15px;
         padding-left: 15px;
         line-height: 20px;
-        position: relative;
+        /*position: relative;*/
+        position: fixed;
     }
 
 .homenews {
@@ -71248,6 +71275,7 @@ header .navigation--middle .nav__left .site-search .input-group {
 
 .bxknhcate_faq {
     overflow: hidden;
+    height:521px;
     /*margin: 15px auto auto auto;*/
     /*margin: 0px -8px auto 8px;*/
     margin:-9px;

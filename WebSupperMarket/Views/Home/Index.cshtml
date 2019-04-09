@@ -3,42 +3,40 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="home__section good__price-section home__section--type-1 section-2">
-    <div class="container">
-        <div id="undermenu" class="container-fluid home__product-container main-navigation" style="box-shadow: 0 0 4px 0 rgba(0,0,0,.2); background-color: #fff;height: auto;">
-            <div class="row mainbox">
-                <div class="col-md-2  hidden-sm hidden-xs">@*mainmenu*@
+<div id="undermenu" class="container-fluid home__product-container main-navigation" style="box-shadow: 0 0 4px 0 rgba(0,0,0,.2); background-color: #fff;height: auto;">
+    <div class="row mainbox">
+        <div class="col-md-2  hidden-sm hidden-xs">
+            @*mainmenu*@
 
-                    <h5 style="padding:5px; text-align:center;">
-                        <i class="fas fa-bars"></i>
-                        <!--<i class="polish-version-icon-all-department"></i>-->
-                        <span>Danh mục sản phẩm</span>
-                        <i class="fa fa-angle-down"></i>
+            <h5 style="padding:5px; text-align:center;">
+                <i class="fas fa-bars"></i>
+                <!--<i class="polish-version-icon-all-department"></i>-->
+                <span>Danh mục sản phẩm</span>
+                <i class="fa fa-angle-down"></i>
+            </h5>
+        </div>
+        <div class="txtbanner col-md-10 col-sm-12">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
+                        <img class="img-responsive" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
+                        <a href="/product/mat_ong_tracybee" onclick="jQuery.ajax({ url: '/product/mat_ong_tracybee?bid=23994&amp;r=' + (new Date).getTime(), async: true, cache: false })">Mật ong Tracybee</a>
                     </h5>
                 </div>
-                <div class="txtbanner col-md-10 col-sm-12">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <h5 style="padding:5px; text-align:center;">
-                                <a href="/product/mat_ong_tracybee" onclick="jQuery.ajax({ url: '/product/mat_ong_tracybee?bid=23994&amp;r=' + (new Date).getTime(), async: true, cache: false })">Mật ong Tracybee</a>
-                            </h5>
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <h5 style="padding:5px;  text-align:center;">
-                                <a href="/product/collagen_vinh_hoan" onclick="jQuery.ajax({ url: '/product/collagen_vinh_hoan?bid=24075&amp;r=' + (new Date).getTime(), async: true, cache: false })">Collagen Vĩnh Hoàn</a>
-                            </h5>
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <h5 style="padding:5px;  text-align:center;">
-                                <a href="https://www.sieuthingaymoi.com/dong-trung" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=23963&amp;r=' + (new Date).getTime(), async: true, cache: false })">Đông trùng hạ thảo Hector</a>
-                            </h5>
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <h5 style="padding:5px;  text-align:center;">
-                                <a href="https://www.sieuthingaymoi.com/ruou" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=19306&amp;r=' + (new Date).getTime(), async: true, cache: false })">Rượu </a>
-                            </h5>
-                        </div>
-                    </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5 style="padding:5px;  text-align:center;">
+                        <a href="/product/collagen_vinh_hoan" onclick="jQuery.ajax({ url: '/product/collagen_vinh_hoan?bid=24075&amp;r=' + (new Date).getTime(), async: true, cache: false })">Collagen Vĩnh Hoàn</a>
+                    </h5>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5 style="padding:5px;  text-align:center;">
+                        <a href="https://www.sieuthingaymoi.com/dong-trung" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=23963&amp;r=' + (new Date).getTime(), async: true, cache: false })">Đông trùng hạ thảo Hector</a>
+                    </h5>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5 style="padding:5px;  text-align:center;">
+                        <a href="https://www.sieuthingaymoi.com/ruou" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=19306&amp;r=' + (new Date).getTime(), async: true, cache: false })">Rượu </a>
+                    </h5>
                 </div>
             </div>
         </div>
@@ -67,7 +65,7 @@
                 <div class="feature__sec feature__sec-banner">
                     <div class="js-owl-carousel js-owl-rotating-image">
                         <div class="feature__sec-slide">
-                            <div class="feature__sec-focus container">
+                            <div class="feature__sec-focus container-fluid">
                                 <div class="row">
                                     <div class="mega-menu-carousel  col-md-8 col-sm-12">
                                         <div class="owl-carousel owl-theme js-mega-menu-carousel owl-loaded owl-drag" data-autoplay="4000" data-total="6">
@@ -76,19 +74,22 @@
                                                     <div class="owl-item" style="width: 1030px;">
                                                         <div class="content-of-mega-menu" data-bgcolor="#FBFFDA" style="background-color: #FBFFDA; position: relative;">
                                                             <a href=# class="js-gtm-track-click-banner " data-istrackable="false" data-trackbannerid="" data-trackbannername="" data-trackbannercreative="" data-trackbannerposition="" data-trackbannerurl=https://www.suoilanhmartcom/adr-eat-lp2498?itm_source =Mega_HV_P1_STOLHTD&amp;itm_medium =PC&amp;itm_campaign =20190318_20190318_MKTC_ADRE" target="_self" style="margin-bottom: 0px !important;">
-                                                            <img src="/Content/sys_page/image/banner1.png" class="js-responsive-image lazy  lazy-initialized img-responsive" width="100%" height="auto" data-append="img-responsive " alt="ADREAT - Một click triệu món ngon" title="ADREAT - Một click triệu món ngon" style="margin-bottom: 0px !important;"></a>
+                                                                <img src="/Content/sys_page/image/banner1.png" class="js-responsive-image lazy  lazy-initialized img-responsive" width="100%" height="auto" data-append="img-responsive " alt="ADREAT - Một click triệu món ngon" title="ADREAT - Một click triệu món ngon" style="margin-bottom: 0px !important;">
+                                                            </a>
                                                         </div>
                                                     </div>
                                                     <div class="owl-item" style="width: 1030px;">
                                                         <div class="content-of-mega-menu" data-bgcolor="#f9deec" style="background-color: #f9deec; position: relative;">
                                                             <a href=# class="js-gtm-track-click-banner " data-istrackable="false" data-trackbannerid="" data-trackbannername="" data-trackbannercreative="" data-trackbannerposition="" data-trackbannerurl=https://www.suoilanhmartcom/dv-tour-nhat-han-hoa-anh-dao-lp7114?itm_source =Mega_HV_P2_STOLDV&amp;itm_medium =PC&amp;itm_campaign =20190318_tournhathan" target="_self" style="margin-bottom: 0px !important;">
-                                                            <img src="/Content/sys_page/image/banner1.png" class="js-responsive-image lazy  lazy-initialized img-responsive" width="100%" height="auto" data-append="img-responsive " alt="Lễ hội anh đào - Tour du lịch siêu ưu đãi" title="Lễ hội anh đào - Tour du lịch siêu ưu đãi" style="margin-bottom: 0px !important;"></a>
+                                                                <img src="/Content/sys_page/image/banner1.png" class="js-responsive-image lazy  lazy-initialized img-responsive" width="100%" height="auto" data-append="img-responsive " alt="Lễ hội anh đào - Tour du lịch siêu ưu đãi" title="Lễ hội anh đào - Tour du lịch siêu ưu đãi" style="margin-bottom: 0px !important;">
+                                                            </a>
                                                         </div>
                                                     </div>
                                                     <div class="owl-item" style="width: 1030px;">
                                                         <div class="content-of-mega-menu" data-bgcolor="#EF7163" style="background-color: #EF7163; position: relative;">
                                                             <a href=# class="js-gtm-track-click-banner " data-istrackable="false" data-trackbannerid="" data-trackbannername="" data-trackbannercreative="" data-trackbannerposition="" data-trackbannerurl=https://www.suoilanhmartcom/khuyen-mai-hot-cong-nghe-lp1681?itm_source =Mega_HV_P3_STOLICT&amp;itm_medium =PC&amp;itm_campaign =20190318_ICT_Pushsale1418" target="_self" style="margin-bottom: 0px !important;">
-                                                            <img src="/Content/sys_page/image/banner2.png" class="js-responsive-image lazy  lazy-initialized img-responsive" width="100%" height="auto" data-append="img-responsive " alt="Tuần lể công nghệ - Sale chớp nhoáng giá kịch sàn" title="Tuần lể công nghệ - Sale chớp nhoáng giá kịch sàn" style="margin-bottom: 0px !important;"></a>
+                                                                <img src="/Content/sys_page/image/banner2.png" class="js-responsive-image lazy  lazy-initialized img-responsive" width="100%" height="auto" data-append="img-responsive " alt="Tuần lể công nghệ - Sale chớp nhoáng giá kịch sàn" title="Tuần lể công nghệ - Sale chớp nhoáng giá kịch sàn" style="margin-bottom: 0px !important;">
+                                                            </a>
                                                         </div>
                                                     </div>
                                                     <div class="owl-item" style="width: 1030px;">
@@ -145,7 +146,7 @@
             </div>
         </div>
         @*ProductCategory*@
-        @*@RenderPage("~/Views/Shared/ProductCategory.cshtml")*@ 
+        @*@RenderPage("~/Views/Shared/ProductCategory.cshtml")*@
         @{ Html.RenderAction("RenderProductCategory", "Home"); }
     </div>
     <div class="home__section home__banner-section section--shortcut section-0">

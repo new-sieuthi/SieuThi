@@ -113,5 +113,14 @@ namespace Model.Dao
             return items;
         }
 
+        public List<ProductCategory> GetHeaderListLevelByID(int LevelMenu, int ParentID)
+        {
+            if (LevelMenu == 1)
+                return db.ProductCategories.Where(x => x.LevelMenu == LevelMenu && x.Status == true).OrderBy(x => x.DisplayOrder).ToList();
+            else
+                return db.ProductCategories.Where(x => x.LevelMenu == LevelMenu && x.ParentID == ParentID && x.Status == true).OrderBy(x => x.DisplayOrder).ToList(); ;
+
+        }
+
     }
 }
