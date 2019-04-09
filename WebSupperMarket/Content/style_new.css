@@ -1494,6 +1494,7 @@ pre {
 
     .txtbanner h5 a{
         position:inherit !important;
+        line-height :20px;
     }
 
     .txtbanner h5 img{
@@ -71230,8 +71231,8 @@ header .navigation--middle .nav__left .site-search .input-group {
     }
 
     .txtbanner img{
-        width:30px;
-        height:30px;
+        width:50px;
+        height:50px;
         display:inline-block;
         float:left;
     }
@@ -71245,7 +71246,7 @@ header .navigation--middle .nav__left .site-search .input-group {
         /*display: inline-block;*/
         margin-left: 15px;
         padding-left: 15px;
-        line-height: 20px;
+        line-height: 45px;
         /*position: relative;*/
         position: fixed;
     }
@@ -71280,6 +71281,7 @@ header .navigation--middle .nav__left .site-search .input-group {
     /*margin: 0px -8px auto 8px;*/
     margin:-9px;
     margin-bottom:5px;
+    margin-top:0;
     /*max-width: 1330px;*/
     background-color: #fff;
 }
