@@ -151,6 +151,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductCategoryController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TopMenuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -172,6 +173,7 @@
     <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\js\bootstrap.js" />
     <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\controller\topMenuController.js" />
     <Content Include="Assets\js\controller\categoryController.js" />
     <Content Include="Assets\js\controller\aboutController.js" />
     <Content Include="Assets\js\controller\productCategoryController.js" />
@@ -1185,6 +1187,10 @@
     <Content Include="Views\Brand\Update.cshtml" />
     <Content Include="Views\Content\Update.cshtml" />
     <Content Include="Views\Home\ManageImages.cshtml" />
+    <Content Include="Views\TopMenu\Create.cshtml" />
+    <Content Include="Views\TopMenu\Index.cshtml" />
+    <Content Include="Views\TopMenu\Update.cshtml" />
+    <Content Include="Views\Product\Upload.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

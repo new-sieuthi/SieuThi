@@ -26,6 +26,7 @@ namespace Model.EF
         public virtual DbSet<SystemConfig> SystemConfigs { get; set; }
         public virtual DbSet<Tag> Tags { get; set; }
         public virtual DbSet<About> Abouts { get; set; }
+        public virtual DbSet<TopMenu> TopMenus { get; set; }
         public virtual DbSet<Sys_User> Sys_User { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

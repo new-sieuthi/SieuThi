@@ -65,6 +65,8 @@
     <Compile Include="Dao\BrandDao.cs" />
     <Compile Include="Dao\ProductCategoryDao.cs" />
     <Compile Include="Dao\ProductDao.cs" />
+    <Compile Include="Dao\TopMenuDao.cs" />
+    <Compile Include="EF\TopMenu.cs" />
     <Compile Include="EF\About.cs" />
     <Compile Include="EF\Brand.cs" />
     <Compile Include="EF\Category.cs" />
