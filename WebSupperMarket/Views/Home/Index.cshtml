@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div id="undermenu" class="container-fluid home__product-container main-navigation" style="box-shadow: 0 0 4px 0 rgba(0,0,0,.2); background-color: #fff;height: auto;">
-    <div class="row mainbox">
+    <li class="row mainbox">
         <div class="col-md-2  hidden-sm hidden-xs">
             @*mainmenu*@
 
@@ -15,44 +15,49 @@
                 <i class="fa fa-angle-down"></i>
             </h5>
         </div>
-        <div class="txtbanner col-md-10 col-sm-12">
-            <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
+        <div class="txtbanner">
+            <div class="col-md-2 col-sm-12">
+                <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
 
-                        <a href="/product/mat_ong_tracybee" onclick="jQuery.ajax({ url: '/product/mat_ong_tracybee?bid=23994&amp;r=' + (new Date).getTime(), async: true, cache: false })">
-                            <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
-                            Mật ong Tracybee
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
-                        <a href="/product/collagen_vinh_hoan" onclick="jQuery.ajax({ url: '/product/collagen_vinh_hoan?bid=24075&amp;r=' + (new Date).getTime(), async: true, cache: false })">
-                            <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
-                            Collagen Vĩnh Hoàn
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
-                        <a href="https://www.sieuthingaymoi.com/dong-trung" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=23963&amp;r=' + (new Date).getTime(), async: true, cache: false })">
-                            <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
-                            Đông trùng hạ thảo Hector
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
-                        <a href="https://www.sieuthingaymoi.com/ruou" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=19306&amp;r=' + (new Date).getTime(), async: true, cache: false })">
-                            <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
-                            Rượu
-                        </a>
-                    </h5>
-                </div>
+                    <a href="/product/mat_ong_tracybee" onclick="jQuery.ajax({ url: '/product/mat_ong_tracybee?bid=23994&amp;r=' + (new Date).getTime(), async: true, cache: false })">
+                        <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
+                        Mật ong Tracybee
+                    </a>
+                </h5>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
+                    <a href="/product/collagen_vinh_hoan" onclick="jQuery.ajax({ url: '/product/collagen_vinh_hoan?bid=24075&amp;r=' + (new Date).getTime(), async: true, cache: false })">
+                        <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
+                        Collagen Vĩnh Hoàn
+                    </a>
+                </h5>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
+                    <a href="https://www.sieuthingaymoi.com/dong-trung" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=23963&amp;r=' + (new Date).getTime(), async: true, cache: false })">
+                        <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
+                        Đông trùng hạ thảo Hector
+                    </a>
+                </h5>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
+                    <a href="https://www.sieuthingaymoi.com/ruou" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=19306&amp;r=' + (new Date).getTime(), async: true, cache: false })">
+                        <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
+                        Rượu
+                    </a>
+                </h5>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <h5 style="padding:5px; text-align:center; width:50px; height:50px;">
+                    <a href="https://www.sieuthingaymoi.com/ruou" onclick="jQuery.ajax({ url: '//www.sieuthingaymoi.com/bannertracking?bid=19306&amp;r=' + (new Date).getTime(), async: true, cache: false })">
+                        <img class="img-thumbnail" src="~/image/may-giat-samsung-ww90k52e0ww-sv-dd-300x300.jpg" />
+                        Juno
+                    </a>
+                </h5>
             </div>
         </div>
-    </div>
 </div>
 <div id="content" class="clearfix">
     <a id="skip-to-content"></a>

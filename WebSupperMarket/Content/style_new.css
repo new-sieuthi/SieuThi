@@ -1520,6 +1520,13 @@ pre {
 
 @media(max-width:860px){
     .txtbanner h5 img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media(max-width:640px) {
+    .txtbanner h5 img {
         height: auto;
         width: auto;
     }
@@ -71243,20 +71250,24 @@ header .navigation--middle .nav__left .site-search .input-group {
     /*width: 80%;*/
     line-height: 52px;
     height: auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
 }
 
+.txtbanner .col-md-2{
+    margin-top:-15px;
+}
     .txtbanner a:first-child {
         border-left: none;
         margin-left: 0;
     }
 
-    .txtbanner img{
-        width:50px;
-        height:50px;
-        display:inline-block;
-        float:left;
+    .txtbanner img {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        float: left;
+        margin-right: 3px;
     }
 
     .txtbanner a {
@@ -71267,10 +71278,11 @@ header .navigation--middle .nav__left .site-search .input-group {
         display: inherit;
         /*display: inline-block;*/
         margin-left: 15px;
-        padding-left: 15px;
+        /*padding-left: 15px;*/
         line-height: 45px;
         /*position: relative;*/
         position: fixed;
+        font-size:13px;
     }
 
 .homenews {
